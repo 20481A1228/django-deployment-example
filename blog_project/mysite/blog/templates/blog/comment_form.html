@@ -1,0 +1,20 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+<h1>New Comment</h1>
+
+<form class="post-form" method="post">
+    {% csrf_token %}
+    
+    <!-- Manually render only the 'text' field -->
+    <textarea class="editable" name="text" placeholder="Write your comment here..."></textarea>
+
+    <button type="submit" class="btn btn-primary">Post Comment</button>
+</form>
+
+<!-- Adding MediumEditor initialization for the editable text area -->
+<script>
+    var editor = new MediumEditor('.editable');  // Target fields with the 'editable' class
+</script>
+
+{% endblock %}
