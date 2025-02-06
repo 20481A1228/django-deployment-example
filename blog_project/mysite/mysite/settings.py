@@ -6,7 +6,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'blog/templates/blog')
 
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'default-secret-key')  # Use environment variable for security
 DEBUG = False  # Set to False in production
-ALLOWED_HOSTS = ['karthikesh07.pythonanywhere.com']  # Add your domain
+ALLOWED_HOSTS = ['*']  # Add your domain
 
 INSTALLED_APPS = [
     'django.contrib.admin',
