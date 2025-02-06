@@ -8,7 +8,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'blog/templates/blog')
 # Quick-start development settings - unsuitable for production
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'default-secret-key')  # Use environment variable for security
 DEBUG = True
-ALLOWED_HOSTS = ["*"]  # Make sure to define this for production
+ALLOWED_HOSTS = ['karthikesh07.pythonanywhere.com']  # Make sure to define this for production
 
 # Application definition
 INSTALLED_APPS = [
